@@ -9,6 +9,8 @@ public class ServidorCentral {
         try {
             LocateRegistry.createRegistry(8080);
 
+            Fachada fachada = new Fachada();
+
         } catch (RemoteException e){
             e.printStackTrace();
         }
